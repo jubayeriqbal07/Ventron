@@ -1,4 +1,3 @@
 # Ventron
 
-# After cloning the repository run:
-  npm i
+# After cloning the repository run: npm i
