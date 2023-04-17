@@ -1,0 +1,73 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="shortcut icon" href="../static/Assets/logo.jpg" type="image/x-icon")
+        link(rel="stylesheet" href="../static/CSS/style.css")
+        link(rel="stylesheet" media="screen and (max-width:1010px)" href="../static/CSS/phone.css")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        title Ventron
+    body
+        nav#navbar 
+            div#logo(onclick="window.location.href = '/'")
+                img(src="../static/Assets/logo.jpg", alt="Logo")
+            div#hamburger(onclick="clickHamburger()")
+                div.hamburger-bar#hamburger-bar1
+                div.hamburger-bar#hamburger-bar2
+                div.hamburger-bar#hamburger-bar3
+            ul#nav-ul 
+                li
+                    a(href="#home-section") Home 
+                li 
+                    a(href="#service-section") Services
+                li 
+                    a(href="#projects-section") Projects 
+                li 
+                    a(href="#contact-section") Contact US
+                    
+
+        div#home-section
+            div.center
+                h2.h-primary Welcome to Ventron
+                p Hello World!
+
+        div#service-section
+            h1.center Our Services
+            div#service-section-item
+                div.box
+                    img(src="../static/Assets/html-5_logo.jpg", alt="html5")
+                    h2 HTML5
+                    p Description
+
+                div.box
+                    img(src="../static/Assets/nodejs_logo.jpg", alt="nodejs")
+                    h2 NODE JS 
+                    p Description
+
+                div.box
+                    img(src="../static/Assets/maintenance.png", alt="maintenance")
+                    h2 MAINTAINABLE CODE
+                    p Description
+
+        div#projects-section
+            h1.center Our Projects
+            div#projects-section-item
+                div.box
+                    img(src="../static/Assets/html-5_logo.jpg", alt="")
+                    h2 HTML5 
+                    p Description
+                    a(href="/") 
+                        Button.btn Open Project 
+
+
+        div#contact-section
+            h2 Feel Free to Contact Us
+            div.contact-section-items
+                a.fa.fa-facebook(href="https://www.facebook.com/jubayer.iqbal.07") 
+                a.fa.fa-twitter(href="https://twitter.com/wearevenom07") 
+                a.fa.fa-instagram(href="https://www.instagram.com/__m00nknight__") 
+                a.fa.fa-github(href="https://github.com/jubayeriqbal07") 
+
+    script(src="../static/JS/index.js") 
